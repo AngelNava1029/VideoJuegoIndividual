@@ -1,0 +1,68 @@
+/* Minimalista: tipografía, colores y layout */
+:root {
+  --bg: #0f1724; /* oscuro */
+  --accent: #7dd3fc; /* azul claro */
+  --muted: #94a3b8;
+  --danger: #fb7185;
+  font-synthesis: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--muted);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.wrap {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+canvas {
+  background: linear-gradient(180deg, #071029 0%, rgba(7, 16, 41, 0.6) 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+  display: block;
+}
+
+.ui {
+  width: 100%;
+  max-width: 520px;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.ui .card {
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid rgba(125, 211, 252, 0.12);
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.big {
+  font-weight: 700;
+  color: var(--accent);
+}

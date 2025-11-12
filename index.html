@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minimal Dodge — Juego Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <canvas id="game" width="640" height="480" aria-label="Juego minimalista"></canvas>
+
+    <div class="ui" style="max-width:640px;">
+      <div class="card">Puntuación: <span id="score" class="big">0</span></div>
+      <div class="card hint">Controles: ← → o A D • Tocar pantalla (móvil)</div>
+      <button id="restart" class="btn">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
